@@ -7,8 +7,10 @@ svg.icon, .icon--figure {
   height: 1.3em;
   width: 1.3em;
   flex-grow: 0;
+  vertical-align: middle;
 }
 
 .icon--text {
   margin-left: .75em;
+  vertical-align: middle;
 }
