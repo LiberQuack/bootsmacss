@@ -5,7 +5,7 @@
 .e-fade {
   @extend .e-transition;
   opacity: 0;
-  &.isVisible,&[is-visible] {
+  &.isVisible, &[is-visible] {
     @extend %e-fade-is-visible;
   }
 }
@@ -15,7 +15,7 @@
   will-change: transform !important;
   transition-timing-function: cubic-bezier(1, 0, 0, 1) !important;
   transform: translateY(-100%);
-  &[is-visible] {
+  &.isVisible, &[is-visible] {
     @extend %e-from-top-is-visible;
   }
 }
