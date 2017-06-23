@@ -16,7 +16,7 @@ html, body {
 }
 
 
-input, textarea, keygen, select, button {
+input, textarea, select, button {
   color: inherit;
   font-family: inherit;
 }
@@ -50,13 +50,6 @@ button, input[type=submit] {
   display: none !important;
 }
 
-
 dom-if, dom-repeat {
   display: none !important;
-}
-
-@media #{$desktop} {
-  body {
-    overflow-y: scroll;
-  }
 }

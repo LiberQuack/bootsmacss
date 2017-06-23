@@ -1,17 +1,8 @@
-%icon-loading-is-visible {
-  opacity: 1;
-  animation-play-state: running;
-}
+//Use sass placeholders when using @extends on states
 
+/*
 %overlay-is-visible {
   pointer-events: auto;
   opacity: .5;
 }
-
-%e-fade-is-visible {
-  opacity: 1;
-}
-
-%e-from-top-is-visible {
-  transform: translateY(0);
-}
+*/
