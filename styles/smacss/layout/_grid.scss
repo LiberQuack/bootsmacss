@@ -1,3 +1,5 @@
+$margin-right: .85%;
+
 .l-row {
   padding: 0;
   margin: 0 auto;
@@ -8,7 +10,7 @@
   font-size: 1rem;
   vertical-align: top;
   display: inline-block;
-  margin-right: 1.6%;
+  margin-right: $margin-right;
 }
 
 .l-row > *:last-child {
@@ -20,45 +22,45 @@
 }
 
 .l-11-12 {
-  width: 91.53%;
+  width: 100% / 12 * 11 - ($margin-right / 12 * 1);
 }
 
 .l-10-12 {
-  width: 83.06%;
+  width: 100% / 12 * 10 - ($margin-right / 12 * 2);
 }
 
 .l-9-12 {
-  width: 74.6%;
+  width: 100% / 12 * 9 - ($margin-right / 12 * 3);
 }
 
 .l-8-12 {
-  width: 66.13%;
+  width: 100% / 12 * 8 - ($margin-right / 12 * 4);
 }
 
 .l-7-12 {
-  width: 57.66%;
+  width: 100% / 12 * 7 - ($margin-right / 12 * 5);
 }
 
 .l-6-12 {
-  width: 49.2%;
+  width: 100% / 12 * 6 - ($margin-right / 12 * 6);
 }
 
 .l-5-12 {
-  width: 40.73%;
+  width: 100% / 12 * 5 - ($margin-right / 12 * 7);
 }
 
 .l-4-12 {
-  width: 32.26%;
+  width: 100% / 12 * 4 - ($margin-right / 12 * 8);
 }
 
 .l-3-12 {
-  width: 23.8%;
+  width: 100% / 12 * 3 - ($margin-right / 12 * 9);
 }
 
 .l-2-12 {
-  width: 15.33%;
+  width: 100% / 12 * 2 - ($margin-right / 12 * 10);
 }
 
 .l-1-12 {
-  width: 6.866%;
+  width: 100% / 12 * 1 - ($margin-right / 12 * 11);
 }

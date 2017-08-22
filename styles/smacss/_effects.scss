@@ -23,3 +23,28 @@
 .e-no-reverse:not([is-visible]) {
   transition: none !important;
 }
+
+.e-rotate {
+  $icon-transition-time: .3s;
+  will-change: opacity;
+  transition: opacity $icon-transition-time, animation-play-state 0s linear 5s;
+  animation-delay: $icon-transition-time;
+  animation-duration: .8s;
+  animation-name: rotate-cyclic;
+  animation-timing-function: cubic-bezier(0.4, 0, 0, 1);
+  animation-iteration-count: 0;
+
+  &.isRotating {
+    animation-iteration-count: infinite;
+  }
+}
+
+
+@keyframes rotate-cyclic {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
