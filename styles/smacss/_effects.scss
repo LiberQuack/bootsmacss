@@ -5,22 +5,12 @@
 .e-fade {
   @extend .e-transition;
   opacity: 0;
-  &.isVisible, &[is-visible] {
-    @extend %e-fade-is-visible;
+  &.isVisible {
+    opacity: 1;
   }
 }
 
-.e-from-top {
-  @extend .e-transition;
-  will-change: transform !important;
-  transition-timing-function: cubic-bezier(1, 0, 0, 1) !important;
-  transform: translateY(-100%);
-  &.isVisible, &[is-visible] {
-    @extend %e-from-top-is-visible;
-  }
-}
-
-.e-no-reverse:not([is-visible]) {
+.e-no-reverse:not(.isVisible) {
   transition: none !important;
 }
 
